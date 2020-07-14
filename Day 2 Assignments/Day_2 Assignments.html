@@ -1,0 +1,96 @@
+<html>
+    <head>
+        <title>
+            Day 2 Assignments
+        </title>
+    </head>
+    <body>
+        <h1><u><b><center> | | | | | | Let's Upgrade Javascript Essentials | | | | | | </center></u></b></h1>
+        <h1><u><b><center> | | | | | | Assignments Day 2 | | | | | |</center></b></u></h1>
+
+        <br>
+
+        <h1><u><b>Day 2 Assignment 1</b></u></h1>
+        
+        <h3> Write a Javascript program to display current day and time  in the following format:</h3>
+        
+        <h3> Sample Output : Today is: Tuesday. 
+            <br> Current Time is :  10 PM : 30 : 30
+        </h3>
+
+        <h2>
+            <u><b>Results Of Code:</b></u>
+        </h2>
+
+        <br>
+
+        <h2 id = "demo1"></h2>
+        <h2 id = "demo2"></h2>
+
+        <br>
+        <hr>
+
+        <h1><b><u> Day 2 Assignment 2 </u></b></h1>
+        
+        <h3> Write a Javascript program to print the contents of the current windows</h3>
+
+        <h2>
+            <u><b>Results Of Code:</b></u>
+        </h2>
+
+        <br>
+
+        <h2> Print This Page </h2>
+
+        <button type = "button" onclick = "window.print()"> Click Here To Print </button>
+
+        <br>
+        <br>
+        <hr>
+
+        <h1><u><b> Day 2 Assignment 3 </b></u></h1>
+
+        <h3> Write a Javascript program to get current date </h3>
+        <h3> Expected Outputs :</h3>
+        <h3> mm-dd-yyyy, mm/dd/yyyy or dd-mm-yyyy, dd/mm/yyyy </h3>
+
+        <h2>
+            <u><b>Results Of Code:</b></u>
+        </h2>
+
+        <br>
+
+        <h2> Current Date: </h2>
+        <h2> In dd/mm/yyy Format:</h2>
+        <h2 id = "demo3"></h2>
+
+        <script>
+            var d = new Date(), h = new Date(), m = new Date(), s = new Date(), day2 = new Date(), m = new Date(), y = new Date()
+            var days = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"];
+           
+            hours = h.getHours();
+            minute = m.getMinutes();
+            seconds = s.getSeconds();
+
+            day = days[d.getDay()];
+            
+            day_2 = day2.getDate();
+            mounth = m.getMonth() + 1;
+            year = y.getFullYear();
+            
+            document.getElementById("demo1").innerHTML = "Today Is: " + day;
+            document.getElementById("demo2").innerHTML = "Current Time Is: " + hours + ":" + minute + ":" + seconds;
+            
+            
+            var time = new Date(); 
+            console. log(time. getHours() + ":" + time);
+
+            document.getElementById("demo3").innerHTML =  day_2 + " / " + mounth + " / " + year; 
+           
+        </script>
+    
+        <h2>
+        </h2>
+        </body>
+    </body>
+</html>
